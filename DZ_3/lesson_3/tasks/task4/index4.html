@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №4</h1>
+	<a href="/lesson_3/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+				
+	З клавіатури вводиться вік людини.
+	 Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+
+				</p>
+			</li>
+		</ol>
+		<script>
+			//Крок 0. Позначення величин
+			// userAge-вiк людини
+			// childInKindergarden-дитина у садочку
+			// childInSchool-дитина у школi
+			// childStudent-cтудент
+			// personWorking-працiвник
+			// personPensioner-персiонер
+			// Крок 1. Введення необхідних даних
+			 let userAge=prompt(`Введiть будь ласка ваш вiк`)
+			let childInKindergarden
+			let childInSchool
+			let childStudent
+			let personWorking
+			let personPensioner
+			 // Крок 2. Обчислення результатів
+         // Крок 3. Виводимо  результат
+		if(userAge<=6){
+			document.write(`Вiтаю,ви дитина у садочку`)
+		}else if(userAge<=17){
+			document.write(`Вiтаю,ви школяр`)
+		}else if(userAge<=24){
+			document.write(`Вiтаю,ви cтудент`)
+		}else if(userAge<=60){
+			document.write(`Вiтаю,ви працiвник`)
+		}else if(userAge>=60){
+			document.write(`Вiтаю,ви пенсiонер`)
+		}
+
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №2</h1>
+		<a href="/lesson_3/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+					З клавіатури вводиться ціна товару і кількість грошей.
+					 Якщо грошей не вистачає то відмовляємо у покупці,
+					  інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+
+
+				</p>
+			</li>
+		</ol> 
+		<script>
+				//Крок 0. Позначення величин
+				// priceProduct-ціна товару
+				// amountMoney-кількість грошей
+				// lremainderCost-остаток грошей
+				// lotereaTicket-цiна квитка
+			// Крок 1. Введення необхідних даних
+
+         let priceProduct=parseFloat(prompt`Введiть ціну товару`)
+			let amountMoney=parseFloat(prompt`Введiть кiлькiсть грошей`)
+			const lotereaTicket=4
+			// Крок 2. Обчислення результатів
+			let remainderCost=(amountMoney-priceProduct)
+			if(amountMoney<priceProduct){
+				document.write(`Вибачте у вас не достатньо коштiв`)
+			}	else if(amountMoney>priceProduct&&remainderCost>=lotereaTicket){
+				document.write(`Вiтаю,ви можете зробити покупку! Чи бажаете лотерею за 4 грн?`)
+			}else
+			document.write(`Дякуемо за покупку!`)
+			
+	
+         // Крок 3. Виводимо  результат
+		</script>
+	</body>
+</html>

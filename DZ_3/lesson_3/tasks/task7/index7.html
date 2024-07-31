@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №7</h1>
+	<a href="/lesson_3/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+				З клавіатури вводиться номер місяця.
+				 Вивести до якої пори він відноситься
+
+
+				</p>
+			</li>
+		</ol>
+		<script>
+			// Крок 1. Введення необхідних даних
+let numMonth=parseInt(prompt`Введiть номер дня мicяця`)
+let summer=("6","7","8")
+let spring=("3","4","5")
+let autumn=("9","10","11")
+let winter=("12","1","2")
+
+ // Крок 2. Обчислення результатів
+ if(numMonth<=8&&numMonth>=6){
+	 document.write(`summer`)
+ } else if(numMonth<=5&&numMonth>=3){
+	 document.write(`spring`)
+ }else if(numMonth<=11&&numMonth>=9){
+	 document.write(`autumn`)
+ }else if(numMonth===12&&numMonth<=2){
+	 document.write(`winter`)
+ }
+
+ // Крок 3. Виводимо  результат
+  
+		</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №1</h1>
+		<a href="/lesson_3/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+					З клавіатури вводяться імена двох дітей та кількість у них цукерок.
+					 Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, 
+					 або вивести, що кількість однакова.
+
+
+				</p>
+			</li>
+		</ol>
+		<script>
+			//Крок 0. Позначення величин
+			// userName1-імя першоi дитини
+			// userName2-імя другоi дитини
+			// numCandy1-кiлькicть цукерок першоi дитини
+			// numCandy2-кiлькicть цукерок другоi дитини
+			// Крок 1. Введення необхідних даних
+			let userName1=prompt(`Введiть імя першоi дитини`)
+			let numCandy1=prompt(`Введiть кiлькicть цукерок у першоi дитини`)
+			let userName2=prompt(`Введiть імя другоi дитини`)
+			let numCandy2=prompt(`Введiть кiлькicть цукерок у другоi дитини`)
+			 // Крок 2. Обчислення результатів
+			 if(numCandy1 >= numCandy2)
+				document.write(`${userName1}`)
+				else 
+				document.write(`${userName2}`)
+			 
+         // Крок 3. Виводимо  результат
+			
+			 
+		</script>
+	</body>
+</html>
