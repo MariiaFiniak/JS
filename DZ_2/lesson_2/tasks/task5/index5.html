@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №5</h1>
+	<a href="/lesson_2/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+				Дано кількість секунд, що пройшла від початку доби.
+				 Визначити скільки це годин і хвилин.
+	
+				</p>
+			</li>
+		</ol>
+		<script>
+			// Крок 1. Введення необхідних даних
+			let numSeconds=parseFloat(prompt`Введiть кiлькiсть секунд:`,'100')
+			 // Крок 2. Обчислення результатів
+			 let numHours=numSeconds/3600
+			 let numMinuts=numSeconds/60
+			 // Крок 3. Виводимо  результат
+			document.write(`Це буде :${numHours}годин i ${numMinuts}минут`)
+			console.log(`Це буде :${numHours}годин i ${numMinuts}минут`)
+		</script>
+</body>
+</html>

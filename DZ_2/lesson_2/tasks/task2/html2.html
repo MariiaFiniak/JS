@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №2</h1>
+		<a href="/lesson_2/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+					Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість
+					років.
+
+				</p>
+			</li>
+		</ol>
+		<script>
+				// Крок 1. Введення необхідних даних
+				let yearsBirth=Math.floor(prompt`Введiть ваш рiк народження:`,'1900')
+				let presentYearth=Math.floor(prompt`Введiть теперишнiй рiк:`,'2000')
+				let date="1 ciчня"
+				let numYears=presentYearth-yearsBirth
+				 // Крок 2.Виводимо результат
+            document.write(`${date} вам: ${numYears} рiк`)
+		</script>
+	</body>
+</html>

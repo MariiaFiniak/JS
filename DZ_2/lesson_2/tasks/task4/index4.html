@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №4</h1>
+	<a href="/lesson_2/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+				Дано довжину у сантиметрах.
+				 Визначати скільки це метрів і кілометрів.
+	
+				</p>
+			</li>
+		</ol>
+		<script>
+			// Крок 1. Введення необхідних даних
+			let lengthCN=Math.floor(prompt`Введiть довжину у сантиметрах:`,'100')
+			 // Крок 2. Обчислення результатів
+			 let numMeters=lengthCN/100
+			 let numKilometer=lengthCN/1000
+			 // Крок 3. Виводимо  результат
+			document.write(`Це буде :${numMeters}метрiв i ${numKilometer}сантиметрiв`)
+			console.log(`Це буде :${numMeters}метрiв i ${numKilometer}сантиметрiв`)
+
+
+		</script>
+</body>
+</html>

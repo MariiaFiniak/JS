@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №6</h1>
+	<a href="/lesson_2/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+				З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. 
+				Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+				</p>
+			</li>
+		</ol>
+		<script>
+			// Крок 1. Введення необхідних даних
+let firstProduct=parseInt(prompt`Введiть кiлькiсть хлiба`,'1')
+let secondProduct=parseInt(prompt`Введiть кiлькiсть молока`,'1')
+let thirdProduct=parseInt(prompt`Введiть кiлькiсть води`,'1')
+let costBread=parseFloat(prompt`Введiть вартiсть хлiба`,'1')
+let costMilk=parseFloat(prompt`Введiть вартiсть молока`,'1')
+let costWater=parseFloat(prompt`Введiть вартiсть води`,'1')
+ // Крок 2. Обчислення результатів
+let totalFirstProduct=(firstProduct*costBread)
+let totalSecondProduct=(secondProduct*costMilk)
+let totalThProduct=(thirdProduct*costWater)
+let generalSum=(totalFirstProduct+totalSecondProduct+totalThProduct)
+ // Крок 3. Виводимо  результат
+  document.write(`
+			  <table border="2px">
+				<tr>
+					<th>Товар</th>
+					<th>Кiлькicть(шт)</th>
+					<th>Цiна( за шт)</th>
+					<th> Загальна цiна</th>
+				</tr>
+				<th>Перший продукт</th>
+				<td>${firstProduct}</td>
+					<td>${costBread}</td>
+					<td>${totalFirstProduct}</td>
+				<tr>
+					<th>Другий продукт</th>
+					<td>${secondProduct}</td>
+					<td>${costMilk}</td>
+					<td>${totalSecondProduct}</td>
+
+				</tr>
+				<tr>
+					<th>Третий продукт</th>
+					<td>${thirdProduct}</td>
+					<td>${costWater}</td>
+					<td>${totalThProduct}</td>
+
+				</tr>
+				<tr>
+					<th>До сплати</th>
+					<td>${generalSum}</td>
+					</tr>
+				</table>
+
+			  `)
+		</script>
+</body>
+</html>

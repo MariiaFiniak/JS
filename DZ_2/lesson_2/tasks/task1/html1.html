@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №1</h1>
+		<a href="/lesson_2/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+					Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у
+					формі таблиці
+
+				</p>
+			</li>
+		</ol>
+		<script>
+			// Крок 1. Введення необхідних даних
+			let num1=parseFloat(prompt`Введiть перше число:`,'0')
+			let num2=parseFloat(prompt`Введiть друге число:`,'0')
+			 // Крок 2. Обчислення результатів
+			  let sum=num1+num2
+			  let sumProduct=num1*num2
+			  let sumFraction=num1/num2
+         // Крок 3. Виводимо  результат
+			  console.log(`${sum},${sumProduct},${sumFraction}`)
+			  document.write(`
+			  <table border="2px">
+				<tr>
+					<th>Sum</th>
+					<td>${sum}</td>
+				</tr>
+				<tr>
+					<th>Product</th>
+					<td>${sumProduct}</td>
+				</tr>
+				<tr>
+					<th>Fraction</th>
+					<td>${sumFraction}</td>
+				</tr>
+				</table>
+
+			  `)
+		</script>
+	</body>
+</html>
