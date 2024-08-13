@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №4</h1>
+	<a href="/lesson_5/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+				Вивести з використанням циклів маркований список з випадковими числами (1-100). 
+				Кількість випадкових чисел вводиться користувачем. Приклад:12,21,34,51
+
+	
+
+				</p>
+			</li>
+		</ol>
+		<script>
+	// Крок 1. Введення необхідних даних
+		let countNum=parseFloat(prompt`Введiть будь ласка кiлькiсть випадкових чисел`)
+			
+			 // Крок 2. Обчислення результатів
+			document.write(`<ul`)
+			for (let i = 0;i <= countNum; i++) {
+				const randNumber=1+Math.floor(Math.random()*100)
+				 document.write(`<li>${randNumber}</li>`)
+			 }
+			 document.write(`</ul`)
+			
+
+
+		</script>
+</body>
+</html>

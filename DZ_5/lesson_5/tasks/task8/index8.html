@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №7</h1>
+	<a href="/lesson_5/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+			Випадковим чином вивести у рандомних позицiях 10 зображень-смайликiв
+				</p>
+			</li>
+		</ol>
+		 <!-- <img src="./img1.jpg" style="position: absolute;left: 20%;top: 30%;">  -->
+		<script>
+
+			// Крок 1. Введення необхідних даних
+
+
+ // Крок 2. Обчислення результатів
+ 
+ for (let ImgIndex = 0; ImgIndex < 10; ImgIndex++) {
+const randImageIndex=1+Math.floor(Math.random()*3)
+const randLeftPosition=Math.floor(Math.random()*101)
+const randLTopPosition=Math.floor(Math.random()*101)
+document.write(`<img src="./img${randImageIndex}.jpg" style="position: absolute;left:${randLeftPosition}%;top: ${randLTopPosition}%">`)
+ }
+
+ // Крок 3. Виводимо  результат
+  
+		</script>
+</body>
+</html>

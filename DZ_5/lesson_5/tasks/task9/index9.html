@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №7</h1>
+	<a href="/lesson_9/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+				
+ Ігровий автомат.
+  Випадково вибираємо зображення у 3 позиціях.
+   Вибір у кожній позиції вибирається як одне з чотирьох зображень.
+	 Вивести ці зображення і повідомити виграш користувача (три перших зображення 100 грн, три других – 200, три третіх – 500, три четвертих зображення – 1000грн). 
+	 Використати цикли і switch (для вибору зображення за номером).
+
+
+
+				</p>
+			</li>
+		</ol>
+				 <!-- <img src="./img/img" style="position: absolute;left: 20%;top: 30%;">  -->
+		<script>
+
+			// Крок 1. Введення необхідних даних
+let sum=0
+let prize=0
+ // Крок 2. Обчислення результатів
+ for (let ImgIndex = 0; ImgIndex < 3; ImgIndex++) {
+const randImageIndex=1+Math.floor(Math.random()*4)
+
+document.write(`<img src="./img/img${randImageIndex}.jpg"/>`)
+sum +=Math.pow(10,randImageIndex)
+
+ }
+ switch (sum) {
+	case 30:
+		prize=100
+	break;
+	case 300:
+		prize=200
+	break;
+	case 3000:
+		prize=500
+	break;
+	case 30000:
+		prize=1000
+	break;
+ 
+	default:
+		break;
+ }
+
+ // Крок 3. Виводимо  результат
+   document.write(`<div>Виграш:${prize}<div/>`)
+		</script>
+</body>
+</html>
