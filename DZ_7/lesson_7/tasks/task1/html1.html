@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №1</h1>
+		<a href="/lesson_7/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+					Створити функцію, яка за номером місяця повертає пору року,
+					до якої відноситься цей місяць.
+
+				</p>
+			</li>
+		</ol>
+		<script>
+			// Крок 1. Введення необхідних даних
+			
+const numberMonth = parseInt(prompt('Ведіть номер місяця'))
+
+// Крок 2. Обчислення результатів
+function getNumberMonth(numberMonth) {
+	let timeYear = ''
+	switch (numberMonth) {
+		case 12:
+		case 1:
+		case 2:
+			timeYear = 'Зима'
+			break;
+		case 3:
+		case 4:
+		case 5:
+			timeYear = 'Весна'
+			break;
+		case 6:
+		case 7:
+		case 8:
+			timeYear = 'Літо'
+			break;
+		case 9:
+		case 10:
+		case 11:
+			timeYear = 'Осінь'
+			break;
+	}
+	return timeYear ? timeYear : 'Не вірний номер місяця'
+}
+ // Крок 3. Виводимо  результат
+document.write(getNumberMonth(numberMonth))
+				 
+		</script>
+	</body>
+</html>

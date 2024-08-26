@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №4</h1>
+		<a href="/lesson_7/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+					Задача 3. Створити окремі функції, які для 4 чисел знаходять:
+					1)суму;
+					2)добуток;
+					3)середнє арифметичне;
+					4)мінімальне значення.
+
+				</p>
+			</li>
+		</ol>
+		<script>
+	// Крок 1. Позначення необхідних даних
+	// суму
+	// добуток n*m
+	// середнє арифметичне:Середнє арифметичне кількох чисел – суму чисел поділити на їхню кількість.
+   // мінімальне значення
+		// Крок 1. Введення необхідних даних
+const num1=parseInt(prompt(`Введiть будь ласка перше число`,"1"))
+const num2=parseInt(prompt(`Введiть будь ласка друге число`,"1"))
+const num3=parseInt(prompt(`Введiть будь ласка трете число`,"1"))
+const num4=parseInt(prompt(`Введiть будь ласка четверте число`,"1"))
+
+ // Крок 2. Обчислення результатів
+function getSum(num1,num2,num3,num4) {
+	 let s=(num1+num2+num3+num4)
+		
+		return s
+}
+function getProduct(num1,num2,num3,num4) {
+
+ let p=(num1*num2*num3*num4)
+
+document.write(`Добуток чисел:${p}<br>`)
+return p
+}
+function getMediumFrimetic(num1,num2,num3,num4) {
+	let m=(num1+num2+num3+num4)/4
+	
+	document.write(`Cереднє арифметичне чисел:${m}<br>`)
+	return m
+}
+function getMin(num1,num2,num3,num4) {
+	let min= num1
+	if (min>num2){
+		min===num2
+	}
+	else if(min>num3){
+      min===num3
+	}else{
+		num4
+	}
+	document.write(`${min}`)
+	return min
+}
+getSum(num1,num2,num3,num4)
+getProduct(num1,num2,num3,num4)
+getMediumFrimetic(num1,num2,num3,num4)
+getMin(num1,num2,num3,num4)
+document.write(`Cума чисел:${s}<br>`)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №2</h1>
+		<a href="/lesson_7/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+
+					Створити функцію, яка за номером місяця повертає його назву.
+				</p>
+			</li>
+		</ol>
+		<script>
+		
+			// Крок 1. Введення необхідних даних
+			
+			 // Крок 2. Обчислення результатів
+			function getNameMonth() {
+				const numberMonth=parseInt(prompt(`Введiть будь ласка номер мiсяця`,"1"))
+				let nameMonth
+				switch (numberMonth) {
+					case 1:
+						nameMonth='Ciчень'
+						break;
+						case 2:
+						nameMonth='Лютий'
+						break;
+						case 3:
+						nameMonth='Березень'
+						break;
+						case 4:
+					   nameMonth='Квiтень'
+						break;
+						case 5:
+						nameMonth='Травень'
+						break;
+						case 6:
+						nameMonth='Червень'
+						break;
+						case 7:
+						nameMonth='Липень'
+						break;
+						case 8:
+						nameMonth='Серпень'
+						break;
+						case 9:
+						nameMonth='Вересень'
+						break;
+						case 10:
+						nameMonth='Жовтень'
+						break;
+						case 11:
+						nameMonth='Листопад'
+						break;
+						case 12:
+						nameMonth='Грудень'
+						break;
+				
+					
+				}
+				return nameMonth ? nameMonth : 'Не вірний номер місяця'
+			}
+	
+         // Крок 3. Виводимо  результат
+		let day=getNameMonth()
+			 document.write(` Мiсяць:${day}`)
+
+		</script>
+	</body>
+</html>

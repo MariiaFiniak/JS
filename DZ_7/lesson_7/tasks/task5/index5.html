@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Задача №5</h1>
+		<a href="/lesson_7/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+
+					Створити функцію, яка для 3 заданих чисел знаходить одночасно
+					декілька
+					результатів:
+					кількість парних,
+					кількість додатних,
+					кількість більших за 100.
+
+				</p>
+			</li>
+		</ol>
+		<script>
+			//Крок 0. Позначення величин
+         // кількість парних,
+        //  кількість додатних-бiльше за нуль
+       // кількість більших за 100.
+
+			// Крок 1. Введення необхідних даних
+			 let getEvenNumberForCalculation=0
+			 let getAddedNumberForCalculation=0
+			 let getLongNumberForCalculation=0
+			  // Крок 2. Обчислення результатів
+            for (let i = 0; i < 3; i++) {
+              const getNumberForCalculation=parseInt(prompt(`Введiть будь ласка три числа для обчислення:`+i))
+				}
+				function countNumber(getNumberForCalculation){
+         if (getNumberForCalculation%2===0)getEvenNumberForCalculation++
+         if (getNumberForCalculation>0)getAddedNumberForCalculation++
+         if (getNumberForCalculation>100) getLongNumberForCalculation++
+        
+         return  
+				getEvenNumberForCalculation
+				getAddedNumberForCalculation
+				getLongNumberForCalculation
+			
+			     }
+        	 // Крок 3. Виводимо  результат
+        countNumber()
+		  document.write(`Кiлькiсть парних чисел:${getEvenNumberForCalculation}<br>`)
+		  document.write(`Кількість додатних чисел:${getAddedNumberForCalculation}<br>`)
+		  document.write(`Кількість чисел більше за 100:${getLongNumberForCalculation}<br>`)
+		
+			
+		</script>
+	</body>
+</html>

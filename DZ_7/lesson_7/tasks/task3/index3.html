@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Задача №3</h1>
+	<a href="/lesson_7/index.html">Назад</a>
+		<ol>
+			<li>
+				<p>
+					Створити функцію, яка за номером дня дозволяє з’ясувати чи є цей день робочим.
+
+				</p>
+			</li>
+		</ol>
+		<script>
+			
+		
+			// Крок 1. Введення необхідних даних
+		
+		
+			 // Крок 2. Обчислення результатів
+			 const numberWeek=parseInt(prompt(`Введiть будь ласка день тижня`))
+			 function getNumberWeek(numberWeek) {
+				let resultDay=''
+         switch (numberWeek) {
+				case 1:
+					resultDay='Cьогоднi робочий день'
+					break;
+					case 2:
+					resultDay='Cьогоднi робочий день'
+					break;
+					case 3:
+					resultDay='Cьогоднi робочий день'
+					break;
+					case 4:
+					resultDay='Cьогоднi робочий день'
+					break ;
+					case 5:
+					resultDay='Cьогоднi робочий день'
+					break;
+					case 6:
+					resultDay='Cьогоднi вихiдний день'
+					break;
+					case 7:
+					resultDay='Cьогоднi вихiдний день'
+					break;
+					
+			}
+				return resultDay
+			 }
+			
+			
+			 
+         // Крок 3. Виводимо  результат
+			alert(getNumberWeek(numberWeek))
+		
+		</script>
+</body>
+</html>
